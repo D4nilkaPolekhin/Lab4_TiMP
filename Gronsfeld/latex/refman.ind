@@ -1,0 +1,54 @@
+\begin{theindex}
+
+  \item {cipher\_error}, \hyperpage{7}
+  \item {convert}
+    \subitem {modAlphaCipher}, \hyperpage{9, 10}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {modAlphaCipher}, \hyperpage{10}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {modAlphaCipher}, \hyperpage{11}
+
+  \indexspace
+
+  \item {is\_low\_rus}
+    \subitem {modAlphaCipher}, \hyperpage{11}
+  \item {is\_rus}
+    \subitem {modAlphaCipher}, \hyperpage{11}
+
+  \indexspace
+
+  \item {lnumAlpha}
+    \subitem {modAlphaCipher}, \hyperpage{12}
+
+  \indexspace
+
+  \item {modAlphaCipher}, \hyperpage{8}
+    \subitem {convert}, \hyperpage{9, 10}
+    \subitem {decrypt}, \hyperpage{10}
+    \subitem {encrypt}, \hyperpage{11}
+    \subitem {is\_low\_rus}, \hyperpage{11}
+    \subitem {is\_rus}, \hyperpage{11}
+    \subitem {lnumAlpha}, \hyperpage{12}
+    \subitem {modAlphaCipher}, \hyperpage{9}
+    \subitem {numAlpha}, \hyperpage{13}
+    \subitem {toValidtext}, \hyperpage{12}
+  \item {modAlphaCipher.cpp}, \hyperpage{15}
+  \item {modAlphaCipher.h}, \hyperpage{16}
+
+  \indexspace
+
+  \item {numAlpha}
+    \subitem {modAlphaCipher}, \hyperpage{13}
+
+  \indexspace
+
+  \item {toValidtext}
+    \subitem {modAlphaCipher}, \hyperpage{12}
+
+\end{theindex}

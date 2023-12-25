@@ -1,0 +1,227 @@
+\hypertarget{classTable}{}\doxysection{Класс Table}
+\label{classTable}\index{Table@{Table}}
+
+
+Шифрование методом маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$table.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTable_a35dc7bc3b9d5bff3c0508f41940ab1f9}\label{classTable_a35dc7bc3b9d5bff3c0508f41940ab1f9}} 
+\mbox{\hyperlink{classTable_a35dc7bc3b9d5bff3c0508f41940ab1f9}{Table}} ()=delete
+\begin{DoxyCompactList}\small\item\em Запрет конструктора без параметров \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTable_ae16d8b0bc97144a4d7c1cb565486644c}{Table}} (const int skey)
+\begin{DoxyCompactList}\small\item\em Констркутор для установки ключа \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTable_afa0e1f33318c29a781fbae485a28f3be}{encrypt}} (const std\+::wstring \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Функция зашифрования \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTable_a2100a1284fca8fc6be1b7e3f636b8733}{decrypt}} (const std\+::wstring \&cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Функция расшифрования \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classTable_a18bf572f94859f729ae0cd567892f272}{is\+\_\+rus}} (wchar\+\_\+t wc)
+\begin{DoxyCompactList}\small\item\em Проверка символа на принадлежность к русскому алфавиту \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTable_ad5d401b1feeadda7e6ac169138f37f06}{is\+\_\+low\+\_\+rus}} (wchar\+\_\+t wch)
+\begin{DoxyCompactList}\small\item\em Проверка символа на принадлежность к строчным буквам р. алфавита \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTable_aa0747c0dda765479c0dca5594aa9e1ff}{to\+Validtext}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Метод валидации строки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::wstring \mbox{\hyperlink{classTable_ad3c99f12b612c6a33c1b04ddaf6508cb}{num\+Alpha}}
+\begin{DoxyCompactList}\small\item\em Русский алфавит заглавными буквами \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTable_a2be90ca68e4ddd84b3c5ad6a2659d01d}{lnum\+Alpha}}
+\begin{DoxyCompactList}\small\item\em Русский алфавит заглавными буквами \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTable_a4539727e389c8a70e65d69ec793fe00b}\label{classTable_a4539727e389c8a70e65d69ec793fe00b}} 
+uint \mbox{\hyperlink{classTable_a4539727e389c8a70e65d69ec793fe00b}{key}}
+\begin{DoxyCompactList}\small\item\em ключ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTable_a063bffd3c111429b161c2c70ff7dcb22}\label{classTable_a063bffd3c111429b161c2c70ff7dcb22}} 
+std\+::map$<$ int, std\+::wstring $>$ \mbox{\hyperlink{classTable_a063bffd3c111429b161c2c70ff7dcb22}{sub\+Num}}
+\begin{DoxyCompactList}\small\item\em словарь \char`\"{}субстрока по номеру\char`\"{}(для зашифровки) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTable_a223d473231dd85da18bd43f56e3de020}\label{classTable_a223d473231dd85da18bd43f56e3de020}} 
+std\+::map$<$ int, std\+::wstring $>$ \mbox{\hyperlink{classTable_a223d473231dd85da18bd43f56e3de020}{resub\+Num}}
+\begin{DoxyCompactList}\small\item\em словарь \char`\"{}субстрока по номеру\char`\"{}(для расшифровки) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифрование методом маршрутной перестановки 
+
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt. \begin{DoxyWarning}{Предупреждения}
+Ипользуется только для русского текста 
+\end{DoxyWarning}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classTable_ae16d8b0bc97144a4d7c1cb565486644c}\label{classTable_ae16d8b0bc97144a4d7c1cb565486644c}} 
+\index{Table@{Table}!Table@{Table}}
+\index{Table@{Table}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{Table()}{Table()}}
+{\footnotesize\ttfamily Table\+::\+Table (\begin{DoxyParamCaption}\item[{const int}]{skey }\end{DoxyParamCaption})}
+
+
+
+Констркутор для установки ключа 
+
+Шифрование методом маршрутной перестановки
+
+Записывает в переменную класса ключ в виде цифры 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em skey} & Целочисленный ключ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & ключ меньше, либо равен единице\\
+\hline
+\end{DoxyExceptions}
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt. \begin{DoxyWarning}{Предупреждения}
+Ипользуется только для русского текста 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classTable_a2100a1284fca8fc6be1b7e3f636b8733}\label{classTable_a2100a1284fca8fc6be1b7e3f636b8733}} 
+\index{Table@{Table}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::wstring Table\+::decrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{cipher\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Функция расшифрования 
+
+Расшифровывает сроку по методу маршрутной перестановки 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em cipher\+\_\+text} & Строка с зашифрованным текстом \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & возбуждается исключение в методе валидации to\+Validtext \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTable_afa0e1f33318c29a781fbae485a28f3be}\label{classTable_afa0e1f33318c29a781fbae485a28f3be}} 
+\index{Table@{Table}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::wstring Table\+::encrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{open\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Функция зашифрования 
+
+Шифрует строку методом маршрутной перестановки 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em open\+\_\+text} & Строка с текстом для зашифрования \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & возбуждается исключение в методе валидации to\+Validtext \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTable_ad5d401b1feeadda7e6ac169138f37f06}\label{classTable_ad5d401b1feeadda7e6ac169138f37f06}} 
+\index{Table@{Table}!is\_low\_rus@{is\_low\_rus}}
+\index{is\_low\_rus@{is\_low\_rus}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{is\_low\_rus()}{is\_low\_rus()}}
+{\footnotesize\ttfamily int Table\+::is\+\_\+low\+\_\+rus (\begin{DoxyParamCaption}\item[{wchar\+\_\+t}]{wch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка символа на принадлежность к строчным буквам р. алфавита 
+
+Находит позицию, на которой стоит в русском алфавите указанный символ 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em wch} & Символ wchar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Позиция символа 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTable_a18bf572f94859f729ae0cd567892f272}\label{classTable_a18bf572f94859f729ae0cd567892f272}} 
+\index{Table@{Table}!is\_rus@{is\_rus}}
+\index{is\_rus@{is\_rus}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{is\_rus()}{is\_rus()}}
+{\footnotesize\ttfamily bool Table\+::is\+\_\+rus (\begin{DoxyParamCaption}\item[{wchar\+\_\+t}]{wc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Проверка символа на принадлежность к русскому алфавиту 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em wc} & Символ wchar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Да или нет 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTable_aa0747c0dda765479c0dca5594aa9e1ff}\label{classTable_aa0747c0dda765479c0dca5594aa9e1ff}} 
+\index{Table@{Table}!toValidtext@{toValidtext}}
+\index{toValidtext@{toValidtext}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{toValidtext()}{toValidtext()}}
+{\footnotesize\ttfamily std\+::wstring Table\+::to\+Validtext (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Метод валидации строки 
+
+Может преобразовывать строчные буквы в заглавные 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & Строка текста. Не может быть пустой. Также в ней не должны присутствовать пробелы, цифры и знаки пунктуации \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Валидированная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & строка не соответствует требованиям, описанным выше \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{classTable_a2be90ca68e4ddd84b3c5ad6a2659d01d}\label{classTable_a2be90ca68e4ddd84b3c5ad6a2659d01d}} 
+\index{Table@{Table}!lnumAlpha@{lnumAlpha}}
+\index{lnumAlpha@{lnumAlpha}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{lnumAlpha}{lnumAlpha}}
+{\footnotesize\ttfamily std\+::wstring Table\+::lnum\+Alpha\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        L\textcolor{stringliteral}{"{}абвгдеёжзийклмнопрстуфхцчшщъыьэюя"{}}}
+
+\end{DoxyCode}
+
+
+Русский алфавит заглавными буквами 
+
+\mbox{\Hypertarget{classTable_ad3c99f12b612c6a33c1b04ddaf6508cb}\label{classTable_ad3c99f12b612c6a33c1b04ddaf6508cb}} 
+\index{Table@{Table}!numAlpha@{numAlpha}}
+\index{numAlpha@{numAlpha}!Table@{Table}}
+\doxysubsubsection{\texorpdfstring{numAlpha}{numAlpha}}
+{\footnotesize\ttfamily std\+::wstring Table\+::num\+Alpha\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        L\textcolor{stringliteral}{"{}АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"{}}}
+
+\end{DoxyCode}
+
+
+Русский алфавит заглавными буквами 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{table_8h}{table.\+h}}\item 
+\mbox{\hyperlink{table_8cpp}{table.\+cpp}}\end{DoxyCompactItemize}
