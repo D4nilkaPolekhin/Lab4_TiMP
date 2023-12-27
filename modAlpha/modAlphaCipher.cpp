@@ -1,5 +1,5 @@
 /** @file
-* @author Стригин А.В.
+* @author Полехин Д.А.
 * @version 1.0
 * @date 22.12.2019
 * @copyright ИБСТ ПГУ
