@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Table_cipher: Исходный файл table_cipher.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Table_cipher
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Стригин Андрей</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">table_cipher.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="table__cipher_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classtable__cipher.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classtable__cipher.html">table_cipher</a>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    uint key;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">double</span> rows;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::string i_value;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::string t;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::vector&lt;std::vector&lt;std::string&gt;&gt; st_to_vec;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtable__cipher.html#a67c1cb4aff82a6bcc5c8a33ee9f46e2f">write_str_to_v</a>(std::string st,std::vector&lt;std::vector&lt;std::string&gt;&gt; &amp;v);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtable__cipher.html#a67c1cb4aff82a6bcc5c8a33ee9f46e2f">write_str_to_v</a>(std::vector&lt;std::vector&lt;std::string&gt;&gt; &amp;v);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::string <a class="code" href="classtable__cipher.html#a05d19ae36e6a442e3bf1a5488deb5fd8">encrypt</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::string <a class="code" href="classtable__cipher.html#af18e578430eab68ffd6af324a60bdc9d">decrypt</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtable__cipher.html#a095a945c28462cb26d6e732274675046">text_validation</a>(std::string &amp;text);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtable__cipher.html#af0a1700a234e0e8f3f9bd8ee52996e90">key_validation</a>(uint &amp;key,std::string &amp;text);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classtable__cipher.html#a35b1f399c9e3f4e588729eeb84b6494d">table_cipher</a>(std::string text,<span class="keywordtype">double</span> k,std::string&amp; initial_value);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classtable__error.html">   85</a></span>&#160;<span class="keyword">class </span><a class="code" href="classtable__error.html">table_error</a>: <span class="keyword">public</span> std::invalid_argument</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classtable__error.html">table_error</a> (<span class="keyword">const</span> std::string&amp; what_arg):</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::invalid_argument(what_arg) {}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classtable__error.html">table_error</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>* what_arg):</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        std::invalid_argument(what_arg) {}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="ttc" id="aclasstable__cipher_html"><div class="ttname"><a href="classtable__cipher.html">table_cipher</a></div><div class="ttdoc">Шифрование методом табличной маршрутной перестановки</div><div class="ttdef"><b>Definition:</b> table_cipher.h:19</div></div>
+<div class="ttc" id="aclasstable__cipher_html_a05d19ae36e6a442e3bf1a5488deb5fd8"><div class="ttname"><a href="classtable__cipher.html#a05d19ae36e6a442e3bf1a5488deb5fd8">table_cipher::encrypt</a></div><div class="ttdeci">std::string encrypt()</div><div class="ttdoc">Шифрование</div><div class="ttdef"><b>Definition:</b> table_cipher.cpp:62</div></div>
+<div class="ttc" id="aclasstable__cipher_html_a095a945c28462cb26d6e732274675046"><div class="ttname"><a href="classtable__cipher.html#a095a945c28462cb26d6e732274675046">table_cipher::text_validation</a></div><div class="ttdeci">void text_validation(std::string &amp;text)</div><div class="ttdoc">Обработка ошибок в строке для операции</div><div class="ttdef"><b>Definition:</b> table_cipher.cpp:84</div></div>
+<div class="ttc" id="aclasstable__cipher_html_a35b1f399c9e3f4e588729eeb84b6494d"><div class="ttname"><a href="classtable__cipher.html#a35b1f399c9e3f4e588729eeb84b6494d">table_cipher::table_cipher</a></div><div class="ttdeci">table_cipher(std::string text, double k, std::string &amp;initial_value)</div><div class="ttdoc">Конструктор для установки обрабатываемой строки, ключа и начального значения двумерного вектора</div><div class="ttdef"><b>Definition:</b> table_cipher.cpp:51</div></div>
+<div class="ttc" id="aclasstable__cipher_html_a67c1cb4aff82a6bcc5c8a33ee9f46e2f"><div class="ttname"><a href="classtable__cipher.html#a67c1cb4aff82a6bcc5c8a33ee9f46e2f">table_cipher::write_str_to_v</a></div><div class="ttdeci">void write_str_to_v(std::string st, std::vector&lt; std::vector&lt; std::string &gt;&gt; &amp;v)</div><div class="ttdoc">Запись строки в двумерный массив для метода encrypt.</div><div class="ttdef"><b>Definition:</b> table_cipher.cpp:9</div></div>
+<div class="ttc" id="aclasstable__cipher_html_af0a1700a234e0e8f3f9bd8ee52996e90"><div class="ttname"><a href="classtable__cipher.html#af0a1700a234e0e8f3f9bd8ee52996e90">table_cipher::key_validation</a></div><div class="ttdeci">void key_validation(uint &amp;key, std::string &amp;text)</div><div class="ttdoc">Обработка ошибок ключа</div><div class="ttdef"><b>Definition:</b> table_cipher.cpp:99</div></div>
+<div class="ttc" id="aclasstable__cipher_html_af18e578430eab68ffd6af324a60bdc9d"><div class="ttname"><a href="classtable__cipher.html#af18e578430eab68ffd6af324a60bdc9d">table_cipher::decrypt</a></div><div class="ttdeci">std::string decrypt()</div><div class="ttdoc">Расшифрование</div><div class="ttdef"><b>Definition:</b> table_cipher.cpp:73</div></div>
+<div class="ttc" id="aclasstable__error_html"><div class="ttname"><a href="classtable__error.html">table_error</a></div><div class="ttdoc">Класс ошибок для модуля Table_cipher.</div><div class="ttdef"><b>Definition:</b> table_cipher.h:86</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
